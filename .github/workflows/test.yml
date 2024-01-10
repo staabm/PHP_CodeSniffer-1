@@ -153,11 +153,16 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
         include:
           - php: '7.2'
             custom_ini: false
           - php: '8.0'
+            custom_ini: true
+          - php: '8.1'
+            custom_ini: false
+          - php: '8.2'
             custom_ini: true
           - php: '8.3'
             custom_ini: false
