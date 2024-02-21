@@ -137,15 +137,15 @@ if (defined('T_NULLSAFE_OBJECT_OPERATOR') === false) {
 }
 
 if (defined('T_NAME_QUALIFIED') === false) {
-    define('T_NAME_QUALIFIED', 'PHPCS_T_NAME_QUALIFIED');
+    define('T_NAME_QUALIFIED', 10001); // needs int
 }
 
 if (defined('T_NAME_FULLY_QUALIFIED') === false) {
-    define('T_NAME_FULLY_QUALIFIED', 'PHPCS_T_NAME_FULLY_QUALIFIED');
+    define('T_NAME_FULLY_QUALIFIED', 10002); // needs int
 }
 
 if (defined('T_NAME_RELATIVE') === false) {
-    define('T_NAME_RELATIVE', 'PHPCS_T_NAME_RELATIVE');
+    define('T_NAME_RELATIVE', 10003); // needs int
 }
 
 if (defined('T_MATCH') === false) {
