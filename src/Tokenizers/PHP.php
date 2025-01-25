@@ -577,7 +577,7 @@ class PHP extends Tokenizer
                 consistent for all lines.
             */
 
-            if ($tokenIsArray === true && substr($token[1], -1) === "\r") {
+            if ($tokenIsArray === true && $token[1] !== '' && $token[1][-1] === "\r") {
                 if (isset($tokens[($stackPtr + 1)]) === true
                     && is_array($tokens[($stackPtr + 1)]) === true
                     && $tokens[($stackPtr + 1)][1][0] === "\n"
